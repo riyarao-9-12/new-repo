@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    background-color: #6a1b9a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.button-container {
+    padding: 10px 0;
+}
+
+.nav-buttons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-buttons li {
+    margin: 0;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #6a1b9a;
+    color: #6a1b9a;
+    padding: 12px 25px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #6a1b9a;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+}
+
+.section-title, .about-brand h2, .faq h2 {
+    text-align: center;
+    color: #6a1b9a;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-item {
+    width: 250px; /* Increased width for better visibility */
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #6a1b9a;
+}
+
+.product-item img {
+    width: 100%; /* Full width to fit container */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures image covers the area */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item button.add-to-cart {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item button.add-to-cart:hover {
+    background-color: #4a148c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+
+.price {
+    color: green; /* Green color for price */
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.cart-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cart-icon {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.social-media-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media-images img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fits the container */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.social-media-images img:hover {
+    transform: scale(1.05);
+    border-color: #6a1b9a;
+}
+
+.about-brand {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1300px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.faq {
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #6a1b9a;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1300px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    color: #6a1b9a;
+    transition: color 0.3s ease-in-out;
+}
+
+.faq-item p {
+    margin: 5px 0 0;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #6a1b9a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
